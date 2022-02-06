@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>TodoList</title>
+    </head>
+   
+    <body>
+       
+        
+        <h1 id="header" >ToDo List Uygulaması</h1>
+        <ul id="todoList">
+            <li id="item_8" class="todoİtem">
+                <input type="checkbox">08.00 Uyanma
+            </li>
+            <li id="item_9" class="todoİtem">
+                <input type="checkbox">09.00 Kahvaltı
+            </li>
+            <li id="item_10" class="todoİtem">
+                <input type="checkbox">10.00 İşe Gidiş
+            </li>
+            <li id="item_11" class="todoİtem">
+                <input type="checkbox">11.00 Çalışma
+            </li>
+            <li id="item_12" class="todoİtem">
+                <input type="checkbox">12.00 Çalışma
+            </li>
+            <li id="item_13" class="todoİtem">
+                <input type="checkbox">13.00 Öğle Yemeği Yemek
+            </li>
+
+            <li id="item_14" class="todoİtem">
+                <input type="checkbox">14.00 Toplantı Yapmak
+            </li>
+
+            <li id="item_15" class="todoİtem">
+                <input type="checkbox">15.00 Dinlenme
+            </li>
+
+            <li id="item_16" class="todoİtem">
+                <input type="checkbox">16.00 Çalışma
+            </li>
+
+            <li id="item_17" class="todoİtem">
+                <input type="checkbox">17.00 Mesai Sonu
+            </li>
+            <li id="item_18" class="todoİtem">
+                <input type="checkbox">18.00 Arkadaşlarla Vakit Geçirme
+            </li>
+            <li id="item_19" class="todoİtem">
+                <input type="checkbox">19.00 Arkadaşlarla Vakit Geçirme
+            </li>
+            <li id="item_20" class="todoİtem">
+                <input type="checkbox">20.00 Eve Dönüş
+            </li>
+            <li id="item_21" class="todoİtem">
+                <input type="checkbox">21.00 Tv İzlemek
+            </li>
+            <li id="item_22" class="todoİtem">
+                <input type="checkbox">22.00 Diş Fırçalama
+            </li>
+            <li id="item_23" class="todoİtem">
+                <input type="checkbox">23.00 Yatış
+            </li>
+                       <script src="dom.js" type="text/javascript"></script>
+
+        </ul>
+        <script>
+            
+
+           var date=new Date();
+           var hour=date.getHours();
+           var element;
+          for(var i=hour;i>=8;i--){
+            element=document.getElementById('item_'+i);
+            element.style.textDecoration="line-through";
+            element.querySelector('input').checked=true;
+          }
+
+        </script>
+    </body>
+    </html>
